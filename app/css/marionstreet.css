@@ -1,0 +1,316 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  /*  padding-bottom: 40px; */
+  font-family: 'Quicksand-Regular', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #58585a; }
+
+.slimshady {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.9);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.9);
+  box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.9); }
+
+strong {
+  font-family: 'Quicksand-Bold';
+  text-transform: none;
+  color: #58585a; }
+
+a {
+  color: #B3B333;
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #6AA931;
+  text-decoration: none;
+  transition-property: color .5s linear 0s;
+  -moz-transition: color .5s linear 0s;
+  -webkit-transition: color .5s linear 0s;
+  -o-transition: color .5s linear 0s; }
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+input[type=text],
+input[type=textarea],
+input[type=tel],
+input[type=email] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fffcd9;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+
+/* @group Homepage*/
+.msmlogo a {
+  background: url("../../images/1416-splash.png") no-repeat 0px 0px;
+  width: 342px;
+  height: 380px;
+  display: block;
+  margin: 5px auto 5px; }
+
+.msmlogo a:hover {
+  background: url("../../images/1416-splash.png") no-repeat 0px 1px;
+  width: 342px;
+  height: 380px; }
+
+.splash-page h1, .splash-page h2, .splash-page h3, .splash-page h4, .splash-page h5, .splash-page h6 {
+  font-family: 'GrandHotel-Regular', Arial, sans-serif;
+  font-size: 200%;
+  color: #231f20;
+  text-align: center;
+  text-shadow: none; }
+
+.headerbump {
+  color: #c3b600; }
+
+.headertag {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.headercopy p {
+  padding: 20px 20px 50px;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.8em; }
+
+.headerhours p {
+  font-family: 'Quicksand-Bold';
+  padding: 20px 20px 50px;
+  text-align: center;
+  font-size: .85em;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #231f20; }
+
+.headerlinks {
+  margin-bottom: 40px; }
+
+.headerlinks p {
+  font-size: 2em;
+  text-align: center; }
+
+.headernav p {
+  font-family: 'Quicksand-Bold';
+  padding: 20px 0px 20px;
+  text-align: center;
+  font-size: 1em;
+  line-height: 150%;
+  color: #9C8C34;
+  margin: 0 auto; }
+
+.headernav a, .headerlinks a {
+  color: #B3B333;
+  text-decoration: none; }
+
+.headernav a:hover, .headernav a:focus,
+.headerlinks a:hover, .headerlinks a:focus {
+  color: #6AA931;
+  text-decoration: none;
+  transition-property: color .5s linear 0s;
+  -moz-transition: color .5s linear 0s;
+  -webkit-transition: color .5s linear 0s;
+  -o-transition: color .5s linear 0s; }
+
+.headerdirection p {
+  font-family: 'Arquitecta Thin Italic';
+  padding: 20px 20px 50px;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 2px; }
+
+/* @end */
+.list-inline {
+  text-align: center; }
+
+/* @group Homepage Carousel */
+/* override the bkgd gradient in the controls */
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+/* Carousel base class */
+.carousel {
+  height: auto;
+  margin: 0 auto;
+  z-index: -1; }
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: auto;
+  background-color: #ffffff; }
+
+.carousel-inner > .item > img {
+  min-width: 100%;
+  height: auto; }
+
+/* @end */
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 724px; }
+  /* @group Homepage*/
+  .myidlogo a {
+    background: url(" ../../images/my-id-sprite.png") no-repeat -356px -102px;
+    width: 300px;
+    height: 60px;
+    display: block;
+    margin: 20px auto 20px; }
+  .myidlogo a:hover {
+    background: url(" ../../images/my-id-sprite.png") no-repeat -356px -103px;
+    width: 300px;
+    height: 60px; }
+  /* @end */ }
+
+@media (max-width: 480px) {
+  /* @group Homepage*/
+  .msmlogo a {
+    background: url(" ../../images/msm-splash.png") no-repeat -630px 0px;
+    width: 162px;
+    height: 185px;
+    display: block;
+    margin: 5px auto 5px; }
+  .msmlogo a:hover {
+    background: url(" ../../images/msm-splash.png") no-repeat -630px 1px;
+    width: 162px;
+    height: 185px; }
+  /* @end */ }
+
+/********* Reservation Open Table Overrides 
+because Open Table hates Developers *******/
+.containerRes {
+  position: fixed;
+  right: 10%;
+  top: 100px; }
+
+.containerRes #ism {
+  width: 300px; }
+
+#ism #OT_searchWrapper {
+  background-color: #f6f6f3;
+  width: 302px;
+  border: 2px solid #e3e3e3;
+  border-radius: 4px; }
+
+#OT_defList {
+  margin: 0;
+  position: relative; }
+
+#OT_searchWrapper .OT_feedTitle {
+  text-align: center; }
+
+#OT_partySizeLbl, #OT_dateLbl, #OT_timeLbl {
+  font-family: "Quicksand-Bold",Helvetica,Arial,sans-serif;
+  padding-left: 10px;
+  font-size: 16px; }
+
+#OT_partySize {
+  margin-bottom: 20px; }
+
+#OT_partySizeLbl {
+  border-top: 2px solid #e3e3e3;
+  padding-top: 5px; }
+
+#dateDisplay {
+  padding: 0; }
+
+#OT_searchWrapper #imageCal {
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  top: 160px; }
+
+#OT_searchWrapper #imageCal table {
+  background-color: #fffcd9;
+  width: 100%; }
+
+#OT_searchWrapper #imageCal td {
+  text-align: center; }
+
+#imageCal > tbody > tr:nth-child(1), #imageCal > tbody > tr:nth-child(3) {
+  display: none; }
+
+#imageCal > tbody > tr:nth-child(2) > .partOfCal:nth-child(1), #imageCal > tbody > tr:nth-child(2) > .partOfCal:nth-child(2), #imageCal > tbody > tr:nth-child(2) > .partOfCal:nth-child(4), #imageCal > tbody > tr:nth-child(2) > .partOfCal:nth-child(5) {
+  display: none; }
+
+#imageCal > tbody > tr:nth-child(2) > .partOfCal:nth-child(3) {
+  border: 1px solid #e3e3e3; }
+
+#imageCal > tbody > tr:nth-child(2) > .partOfCal:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(1) > td.partOfCal {
+  background-color: #e3e3e3; }
+
+img.partOfCal.spacer {
+  display: none; }
+
+.partOfCal img.partOfCal.spacer {
+  display: block;
+  height: 1px;
+  margin: 0;
+  padding: 0; }
+
+.leftArrowTd, .months, .rightArrowTd {
+  padding: 5px 0; }
+
+#OT_searchWrapper .weekdays {
+  background-color: #9C8C34;
+  color: #fff;
+  text-decoration: none;
+  width: 14%; }
+
+#OT_searchWrapper .nonclickableDays, #OT_searchWrapper .clickableDays {
+  height: 18px; }
+
+#OT_submitWrap:before {
+  content: 'Find a Table';
+  color: #B3B333;
+  text-transform: uppercase;
+  font-family: "Quicksand-Regular",Helvetica,Arial,sans-serif;
+  font-size: 1.5em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  width: 100%; }
+
+#OT_submitWrap input {
+  opacity: 0; }
+
+#OT_searchWrapper input, #OT_searchWrapper select {
+  background-color: #fffcd9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #58585a;
+  height: 45px;
+  padding: 8px 0 9px 5px;
+  width: 100%;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold; }
+
+#cal1Shim {
+  display: none;
+  z-index: -1;
+  position: absolute; }
+
+@media (max-width: 768px) {
+  .containerRes {
+    position: static;
+    margin-top: 20px; }
+  .containerRes #ism {
+    width: 100%; }
+  #ism #OT_searchWrapper {
+    width: 100%; } }
