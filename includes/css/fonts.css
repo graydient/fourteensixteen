@@ -1,0 +1,74 @@
+/* 
+* Property: Marion Street Market
+* Version: 2.0
+* Client: RCA Chicago
+* 
+* Initial Build begin date: October 8, 2014
+*
+* Initial Launch date: xxx
+*
+* Adaptive site design by fathead design
+* www.fatheaddesign.com
+*
+* CSS Author: Gregg Tomlinson
+*
+Helpful note: when building sprites for mobile, images should not be any deeper than 2560px (iOS especially has an issue with sprites larger than 2560px deep). iPad will render these sprite graphics in landscape mode but _not_ in portrait. Devices rendering at 420px and lower are spotty at best. Emulators (including Adobe Shadow / Edge Inspect and Safari's User Agent will not pick this up.
+*
+* holla.
+*
+*
+*/
+@font-face {
+  font-family: 'Socialico';
+  src: url("../fonts/Socialico.eot?");
+  src: url("../fonts/Socialico.eot?") format("eot"), url("../fonts/Socialico.woff") format("woff"), url("../fonts/Socialico.ttf") format("truetype"), url("/fonts/Socialico.svg#Socialico") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url("../fonts/grandhotelregular.eot");
+  src: url("../fonts/grandhotelregular.eot?#iefix") format("embedded-opentype"), url("../fonts/grandhotelregular.woff") format("woff"), url("../fonts/grandhotelregular.ttf") format("truetype"), url("../fonts/grandhotelregular.svg#grandhotelregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url("../fonts/quicksandregular.eot");
+  src: url("../fonts/quicksandregular.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksandregular.woff") format("woff"), url("../fonts/quicksandregular.ttf") format("truetype"), url("../fonts/quicksandregular.svg#quicksandregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-LightItalic';
+  src: url("../fonts/quicksandlightitalic.eot");
+  src: url("../fonts/quicksandlightitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksandlightitalic.woff") format("woff"), url("../fonts/quicksandlightitalic.ttf") format("truetype"), url("../fonts/quicksandlightitalic.svg#quicksandlightitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url("../fonts/quicksandlight.eot");
+  src: url("../fonts/quicksandlight.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksandlight.woff") format("woff"), url("../fonts/quicksandlight.ttf") format("truetype"), url("../fonts/quicksandlight.svg#quicksandlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Italic';
+  src: url("../fonts/quicksanditalic.eot");
+  src: url("../fonts/quicksanditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksanditalic.woff") format("woff"), url("../fonts/quicksanditalic.ttf") format("truetype"), url("../fonts/quicksanditalic.svg#quicksanditalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'QuicksandDash-Regular';
+  src: url("../fonts/quicksanddash.eot");
+  src: url("../fonts/quicksanddash.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksanddash.woff") format("woff"), url("../fonts/quicksanddash.ttf") format("truetype"), url("../fonts/quicksanddash.svg#quicksanddash") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-BoldItalic';
+  src: url("../fonts/quicksandbolditalic.eot");
+  src: url("../fonts/quicksandbolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksandbolditalic.woff") format("woff"), url("../fonts/quicksandbolditalic.ttf") format("truetype"), url("../fonts/quicksandbolditalic.svg#quicksandbolditalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url("../fonts/quicksandbold.eot");
+  src: url("../fonts/quicksandbold.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksandbold.woff") format("woff"), url("../fonts/quicksandbold.ttf") format("truetype"), url("../fonts/quicksandbold.svg#quicksandbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
