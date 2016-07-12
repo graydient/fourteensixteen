@@ -2,6 +2,9 @@ var gulp = require('gulp');
 // Requires the gulp-sass plugin
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+var gulpIf = require('gulp-if');
 
 // Gulp Watch task
 gulp.task('watch', ['browserSync', 'sass'], function(){
@@ -28,3 +31,12 @@ gulp.task('browserSync', function() {
     },
   })
 })
+
+// Gulp Useref Task
+gulp.task('useref', function(){
+  return gulp.src('app/*.html')
+    .pipe(useref())
+    // Minifies only if it's a JavaScript file
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'))
+});
