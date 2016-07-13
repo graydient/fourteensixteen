@@ -27,8 +27,17 @@ $texture-margin: 2%;
 $num-colors: 5;
 $num-textures: 3;
 
+body {
+  font: 100%/1.5 $os;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
 // Logo
-.logo {
+.center {
+  margin: 0 auto;
+}
+
+.headerhours {
   text-align: center;
 }
 
@@ -53,9 +62,14 @@ $num-textures: 3;
   line-height:1.65em;
   font-weight:400;
   color:$primary;
-    margin-bottom: 1em;
-
+  margin-bottom: 1em;
   }
+  .headercopy p {
+    font-family: $pt;
+  padding: 20px 20px 50px;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.8em; }
 
  p .in-text-link {
   font-family: $os;
@@ -84,6 +98,13 @@ $num-textures: 3;
   }
   }
 
+  .splash-page h1, .splash-page h2, .splash-page h3, .splash-page h4, .splash-page h5, .splash-page h6 {
+  font-family: $mont;
+  font-size: 200%;
+  color: #231f20;
+  text-align: center;
+  text-shadow: none; }
+
 
   h2 {
     margin: 0.5em 0 .45em 0;
@@ -94,6 +115,8 @@ $num-textures: 3;
     line-height: 1;
     letter-spacing:-1px;
     color: $primary;
+    text-align: center;
+
   }
   h3 {
     font-family:$os;
@@ -109,6 +132,7 @@ $num-textures: 3;
       text-decoration: none;
       color: rgb(152, 126, 92);
       transition: color 0.5s ease-in-out;
+      line-height: 0.8em;
       &:hover, &:focus {
         color: $neutral;
         -webkit-transition: color .5s ease-in-out;
@@ -136,7 +160,8 @@ $num-textures: 3;
 // Menu
 .menu {
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 //Social Media Buttons

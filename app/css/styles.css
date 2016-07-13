@@ -1,4 +1,12 @@
-.logo {
+body {
+  font: 100%/1.5 "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143; }
+
+.center {
+  margin: 0 auto; }
+
+.headerhours {
   text-align: center; }
 
 .typography span .line {
@@ -21,6 +29,13 @@
   font-weight: 400;
   color: #5F5958;
   margin-bottom: 1em; }
+
+.typography .headercopy p {
+  font-family: "PT Serif", serif;
+  padding: 20px 20px 50px;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.8em; }
 
 .typography p .in-text-link {
   font-family: "Open Sans", sans-serif;
@@ -48,6 +63,13 @@
   .typography .reversed p .in-text-link:hover, .typography .reversed p .in-text-link:focus {
     color: #987E5C; }
 
+.typography .splash-page h1, .typography .splash-page h2, .typography .splash-page h3, .typography .splash-page h4, .typography .splash-page h5, .typography .splash-page h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 200%;
+  color: #231f20;
+  text-align: center;
+  text-shadow: none; }
+
 .typography h2 {
   margin: 0.5em 0 .45em 0;
   font-family: "Montserrat", sans-serif;
@@ -56,7 +78,8 @@
   text-transform: titlecase;
   line-height: 1;
   letter-spacing: -1px;
-  color: #5F5958; }
+  color: #5F5958;
+  text-align: center; }
 
 .typography h3 {
   font-family: "Open Sans", sans-serif;
@@ -71,7 +94,8 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #987e5c;
-    transition: color 0.5s ease-in-out; }
+    transition: color 0.5s ease-in-out;
+    line-height: 0.8em; }
     .typography h3 a:hover, .typography h3 a:focus {
       color: #444141;
       -webkit-transition: color .5s ease-in-out;
@@ -93,7 +117,8 @@
 
 .menu {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-top: 3em;
+  margin-bottom: 3em; }
 
 .social {
   margin: 0 auto;
