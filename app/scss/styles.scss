@@ -37,8 +37,19 @@ body {
   margin: 0 auto;
 }
 
-.headerhours {
+
+.headerhours  {
   text-align: center;
+  clear: both;  
+  p {
+  font-family: 'Quicksand-Bold';
+  padding: 20px 20px 50px;
+  text-align: center;
+  font-size: .85em;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #231f20; 
+}
 }
 
 // Typography
@@ -162,6 +173,9 @@ body {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em;
+  .button {
+    clear: both;
+  }
 }
 
 //Social Media Buttons
@@ -323,3 +337,39 @@ body {
   opacity:0;
   z-index:2;
 }
+
+
+/* BUTTONS */
+
+
+a.button { 
+  margin: 0 auto;
+  font-family: $os;
+  font-size: .9em;
+  font-weight: bold;
+  text-align:center;
+  text-transform:uppercase;
+  color:$secondary;
+  letter-spacing:1px;
+  display: block;
+  padding: 1em 3em;
+  width:179px;
+  background:none;
+  border: 3px solid $secondary;
+  text-decoration:none;
+  -webkit-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+  
+  &:hover, &:focus {
+    
+    color: $white;
+    background-color:$secondary;
+    
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    }
+  }

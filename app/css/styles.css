@@ -7,7 +7,16 @@ body {
   margin: 0 auto; }
 
 .headerhours {
-  text-align: center; }
+  text-align: center;
+  clear: both; }
+  .headerhours p {
+    font-family: 'Quicksand-Bold';
+    padding: 20px 20px 50px;
+    text-align: center;
+    font-size: .85em;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #231f20; }
 
 .typography span .line {
   width: 25%;
@@ -119,6 +128,8 @@ body {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em; }
+  .menu .button {
+    clear: both; }
 
 .social {
   margin: 0 auto;
@@ -256,3 +267,31 @@ body {
   left: 0;
   opacity: 0;
   z-index: 2; }
+
+/* BUTTONS */
+a.button {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: .9em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #987E5C;
+  letter-spacing: 1px;
+  display: block;
+  padding: 1em 3em;
+  width: 179px;
+  background: none;
+  border: 3px solid #987E5C;
+  text-decoration: none;
+  -webkit-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+  -moz-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+  -o-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+  transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out; }
+  a.button:hover, a.button:focus {
+    color: #ffffff;
+    background-color: #987E5C;
+    -webkit-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    -moz-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    -o-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out; }
