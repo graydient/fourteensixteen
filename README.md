@@ -5,6 +5,6 @@
 To begin using this template, choose one of the following options to get started:
 * Clone the repo: `git clone https://gitURL.git`
 * Install dev depends: `npm install`
-* Run dev: `gulp watch`
+* Run dev: `gulp`
 * Build Prod: `gulp build`
 * Production files are in dist
