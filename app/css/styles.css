@@ -1,3 +1,201 @@
+.typography span .line {
+  width: 25%;
+  height: 0;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 1px;
+  text-align: center;
+  padding: 0 4em; }
+
+.typography .reversed h2, .typography .reversed h6 {
+  color: white;
+  font-weight: 400; }
+
+.typography p {
+  font-family: "PT Serif", serif;
+  font-size: .9em;
+  line-height: 1.65em;
+  font-weight: 400;
+  color: #5F5958;
+  margin-bottom: 1em; }
+
+.typography p .in-text-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #987E5C;
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out; }
+  .typography p .in-text-link:hover, .typography p .in-text-link:focus {
+    color: #444141;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+
+.typography .reversed p {
+  color: white;
+  letter-spacing: .25px; }
+
+.typography .reversed p .in-text-link {
+  color: #ffffff; }
+  .typography .reversed p .in-text-link:hover, .typography .reversed p .in-text-link:focus {
+    color: #987E5C; }
+
+.typography h2 {
+  margin: 0.5em 0 .45em 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2em;
+  font-weight: 400;
+  text-transform: titlecase;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #5F5958; }
+
+.typography h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: .25;
+  color: #987E5C;
+  margin: .5em 0 .75em 0;
+  text-transform: uppercase; }
+  .typography h3 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #987e5c;
+    transition: color 0.5s ease-in-out; }
+    .typography h3 a:hover, .typography h3 a:focus {
+      color: #444141;
+      -webkit-transition: color .5s ease-in-out;
+      -moz-transition: color .5s ease-in-out;
+      -o-transition: color .5s ease-in-out;
+      transition: color .5s ease-in-out; }
+
+.typography h5 {
+  margin: .15em 0 0 0;
+  font-size: .70em;
+  color: #666;
+  font-style: italic;
+  font-weight: 400; }
+
+.typography h6 {
+  margin: 0;
+  padding: 0 0 .8em 0;
+  border-bottom: 1px dashed #ccc; }
+
+.menu {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.social {
+  margin: 0 auto;
+  text-align: center;
+  width: 18em;
+  height: 3em; }
+
+.social div {
+  float: left;
+  margin: 0 auto; }
+
+#fb {
+  background-image: url(../images/facebook-icon.svg);
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: background-image .5s ease-in-out;
+  -moz-transition: background-image .5s ease-in-out;
+  -o-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out; }
+  #fb:hover, #fb:focus {
+    background-image: url(../images/facebook-icon-rev.svg);
+    -webkit-transition: background-image .5s ease-in-out;
+    -moz-transition: background-image .5s ease-in-out;
+    -o-transition: background-image .5s ease-in-out;
+    transition: background-image .5s ease-in-out; }
+
+#insta {
+  background-image: url(../images/instagram-icon.svg);
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  -webkit-transition: background-image .5s ease-in-out;
+  -moz-transition: background-image .5s ease-in-out;
+  -o-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out; }
+  #insta:hover, #insta:focus {
+    background-image: url(../images/instagram-icon-rev.svg);
+    -webkit-transition: background-image .5s ease-in-out;
+    -moz-transition: background-image .5s ease-in-out;
+    -o-transition: background-image .5s ease-in-out;
+    transition: background-image .5s ease-in-out; }
+
+#twi {
+  background-image: url(../images/twitter-icon.svg);
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  -webkit-transition: background-image .5s ease-in-out;
+  -moz-transition: background-image .5s ease-in-out;
+  -o-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out; }
+  #twi:hover, #twi:focus {
+    background-image: url(../images/twitter-icon-rev.svg);
+    -webkit-transition: background-image .5s ease-in-out;
+    -moz-transition: background-image .5s ease-in-out;
+    -o-transition: background-image .5s ease-in-out;
+    transition: background-image .5s ease-in-out; }
+
+#yelp {
+  background-image: url(../images/yelp-icon.png);
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0 0 0 10px; }
+
+#fs {
+  background-image: url(../images/frsq-icon.png);
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0 0 0 10px; }
+
+#sr {
+  background-image: url(../images/sr-icon.png);
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0 0 0 10px; }
+
+.icons {
+  padding: 0;
+  margin: 4% auto;
+  text-align: center;
+  float: left;
+  width: 100%; }
+  .icons li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    width: 80px;
+    opacity: 0.5; }
+    .lt-ie8 .icons li {
+      display: block;
+      float: left; }
+    .icons li:hover {
+      opacity: 1; }
+
+.copyright-info {
+  margin-top: 1em;
+  clear: both;
+  text-align: center; }
+
 .carousel {
   z-index: -99; }
 

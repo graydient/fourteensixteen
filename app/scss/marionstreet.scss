@@ -20,7 +20,7 @@ strong {
   text-transform: none;
   color: #58585a; }
 
-a {
+/* a {
   color: #B3B333;
   text-decoration: none; }
 
@@ -35,7 +35,7 @@ a:hover, a:focus {
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
+  outline-offset: -2px; } */
 
 input[type=text],
 input[type=textarea],
@@ -103,7 +103,7 @@ input[type=email] {
   margin-bottom: 40px; }
 
 .headerlinks p {
-  font-size: 2em;
+
   text-align: center; }
 
 .headernav p {
@@ -115,12 +115,11 @@ input[type=email] {
   color: #9C8C34;
   margin: 0 auto; }
 
-.headernav a, .headerlinks a {
+.headernav a {
   color: #B3B333;
   text-decoration: none; }
 
-.headernav a:hover, .headernav a:focus,
-.headerlinks a:hover, .headerlinks a:focus {
+.headernav a:hover, .headernav a:focus {
   color: #6AA931;
   text-decoration: none;
   transition-property: color .5s linear 0s;
