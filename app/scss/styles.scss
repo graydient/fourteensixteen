@@ -27,6 +27,10 @@ $texture-margin: 2%;
 $num-colors: 5;
 $num-textures: 3;
 
+// Logo
+.logo {
+  text-align: center;
+}
 
 // Typography
 .typography {
@@ -139,7 +143,7 @@ $num-textures: 3;
 .social {
   margin: 0 auto;
   text-align: center;
-  width: 18em;
+  width: 9em;
   height: 3em;
 }
 .social div {
