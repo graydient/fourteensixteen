@@ -1,7 +1,18 @@
+html, body {
+  height: 100%; }
+
 body {
   font: 100%/1.5 "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857143; }
+
+#holder {
+  min-height: 100%;
+  position: relative; }
+
+.scroll {
+  overflow: scroll;
+  position: relative; }
 
 .logo {
   margin-left: -1px;
@@ -11,14 +22,31 @@ body {
   height: 270px; }
   @media only screen and (max-width: 47em) {
     .logo {
-      background-position: 54%; } }
+      background-position: 54%;
+      height: 237px; } }
+  @media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+    .logo {
+      height: 200px; } }
 
 .center {
   margin: 0 auto; }
 
 .well {
+  position: absolute;
   background-color: #FFFFFF;
-  padding: 0; }
+  padding: 0;
+  height: 100vh;
+  overflow: auto;
+  margin-bottom: 0px;
+  padding-bottom: 200px;
+  width: 43%; }
+  @media only screen and (max-width: 80em) {
+    .well {
+      width: 50%; } }
+  @media only screen and (max-width: 47em) {
+    .well {
+      width: 100%;
+      padding-bottom: 100px; } }
 
 .headerhours {
   text-align: center;
@@ -39,6 +67,10 @@ body {
   display: block;
   max-width: 180px;
   margin: 0 auto; }
+  @media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+    .headernav p {
+      padding-top: 0;
+      max-width: 100%; } }
 
 .headernav a {
   color: #fafafa;
@@ -123,6 +155,9 @@ body {
   letter-spacing: -1px;
   color: #5F5958;
   text-align: center; }
+  @media only screen and (max-width: 47em) {
+    .typography h2 {
+      padding: 10px; } }
 
 .typography h3 {
   font-family: "Open Sans", sans-serif;
@@ -169,12 +204,21 @@ body {
   margin-bottom: 3em; }
 
 .social {
+  position: fixed;
+  bottom: 0;
   margin-left: -1px;
   margin-right: -1px;
-  padding-top: 6%;
+  padding-top: 3%;
   background: url(../images/wood-texture-flowers.jpg);
   background-size: cover;
-  height: 150px; }
+  height: 150px;
+  width: inherit; }
+  @media only screen and (max-width: 47em) {
+    .social {
+      height: 50px; } }
+  @media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+    .social {
+      display: none; } }
   .social .flex {
     display: flex;
     flex-direction: row;

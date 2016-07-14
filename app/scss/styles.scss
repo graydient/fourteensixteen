@@ -1,4 +1,5 @@
 // styles.scss
+
 // COLOR PALETTE
 $primary: #5F5958;
 $secondary: #987E5C;
@@ -26,8 +27,12 @@ $num-colors: 5;
 $num-textures: 3;
 
 $mq-mobileOnly: "only screen and (max-width:47em)";
-$mq-smallScreen: "only screen and (max-width:100em)";
+$mq-smallScreen: "only screen and (max-width:80em)";
 $mq-mediumScreen: "only screen and (min-width:48em)";
+
+html,body{
+    height: 100%
+}
 
 body {
   font: 100%/1.5 $os;
@@ -35,6 +40,15 @@ body {
   line-height: 1.42857143;
 }
 
+#holder {
+    min-height: 100%;
+    position:relative;
+}
+
+.scroll {
+  overflow: scroll;
+  position: relative;
+}
 
 .logo {
   margin-left: -1px;
@@ -44,6 +58,12 @@ body {
   height: 270px;
   @media #{$mq-mobileOnly} {
     background-position: 54%;
+    height: 237px;
+  }
+    @media only screen 
+    and (max-device-width : 1000px) 
+    and (orientation : landscape) { 
+    height: 200px;
   }
 }
 
@@ -52,8 +72,21 @@ body {
 }
 
 .well {
+  position: absolute;
   background-color: #FFFFFF;
   padding: 0;
+  height: 100vh;
+  overflow: auto;
+  margin-bottom: 0px;
+  padding-bottom: 200px;
+  width: 43%;
+  @media #{$mq-smallScreen} {
+    width: 50%;
+  }
+  @media #{$mq-mobileOnly} {
+    width: 100%;
+    padding-bottom: 100px;
+  }
 }
 
 
@@ -79,6 +112,12 @@ body {
     display: block;
     max-width: 180px;
     margin: 0 auto;
+        @media only screen 
+    and (max-device-width : 1000px) 
+    and (orientation : landscape) { 
+      padding-top:0;
+      max-width: 100%;
+    }
 }
 
 .headernav a {
@@ -170,7 +209,9 @@ body {
     letter-spacing:-1px;
     color: $primary;
     text-align: center;
-
+     @media #{$mq-mobileOnly} {
+      padding: 10px;
+    }
   }
   h3 {
     font-family:$os;
@@ -227,12 +268,23 @@ body {
 
 //Social Media Buttons
 .social {
+  position: fixed;
+  bottom: 0;
   margin-left: -1px;
   margin-right: -1px;
-  padding-top: 6%;
+  padding-top: 3%;
   background: url(../images/wood-texture-flowers.jpg);
   background-size: cover;
   height: 150px;
+  width: inherit;
+  @media #{$mq-mobileOnly} {
+    height: 50px;
+  }
+  @media only screen 
+  and (max-device-width : 1000px) 
+  and (orientation : landscape) { 
+    display: none;
+   }
   .flex {
     display: flex;
     flex-direction: row;
