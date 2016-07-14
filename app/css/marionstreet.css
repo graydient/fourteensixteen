@@ -55,17 +55,6 @@ input[type=email] {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.headerhours {
-  clear: both; }
-  .headerhours p {
-    font-family: 'Quicksand-Bold';
-    padding: 20px 20px 50px;
-    text-align: center;
-    font-size: .85em;
-    line-height: 135%;
-    text-transform: uppercase;
-    color: #231f20; }
-
 .headerlinks {
   margin-bottom: 40px; }
 

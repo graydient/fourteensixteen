@@ -14,8 +14,6 @@ $lato: 'Lato', sans-serif;
 $rob: 'Roboto', sans-serif;
 $pt: 'PT Serif', serif;
 
-
-
 // LENGTHS
 $page-width: 100%;
 $page-width-fallback: 960px;
@@ -27,14 +25,35 @@ $texture-margin: 2%;
 $num-colors: 5;
 $num-textures: 3;
 
+$mq-mobileOnly: "only screen and (max-width:47em)";
+$mq-smallScreen: "only screen and (max-width:100em)";
+$mq-mediumScreen: "only screen and (min-width:48em)";
+
 body {
   font: 100%/1.5 $os;
   font-size: 14px;
   line-height: 1.42857143;
 }
-// Logo
+
+
+.logo {
+  margin-left: -1px;
+  margin-right: -1px;
+  background: url(../images/wood-texture-flowers.jpg);
+  background-size: cover;
+  height: 270px;
+  @media #{$mq-mobileOnly} {
+    background-position: 54%;
+  }
+}
+
 .center {
   margin: 0 auto;
+}
+
+.well {
+  background-color: #FFFFFF;
+  padding: 0;
 }
 
 
@@ -53,6 +72,30 @@ body {
 }
 
 // Typography
+.headernav p {
+    font-weight:400;
+    color:$white !important; 
+    padding-top:1em;
+    display: block;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.headernav a {
+  color:darken( $white, 2% ); 
+  text-decoration: none; 
+}
+
+.headernav a:hover, .headernav a:focus {
+  color: $tertiary;
+  text-decoration: none;
+  transition-property: color .5s linear 0s;
+  -moz-transition: color .5s linear 0s;
+  -webkit-transition: color .5s linear 0s;
+  -o-transition: color .5s linear 0s; 
+}
+
+
 .typography {
   span .line { 
     width:25%;
@@ -166,31 +209,47 @@ body {
     border-bottom:1px dashed #ccc;
   }
 
-} // End Typography
+} 
+.info-copy {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+// End Typography
 
 // Menu
 .menu {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em;
-  .button {
-    clear: both;
-  }
 }
 
 //Social Media Buttons
 .social {
-  margin: 0 auto;
-  text-align: center;
-  width: 9em;
-  height: 3em;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-top: 6%;
+  background: url(../images/wood-texture-flowers.jpg);
+  background-size: cover;
+  height: 150px;
+  .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    padding-top: 10px;
+    color: $white;
+  }
 }
 .social div {
-  float:left;
+  text-align: center;
   margin:0 auto;
 }
 #fb {
-  background-image:url(../images/facebook-icon.svg);
+  background-image:url(../images/fb-white.svg);
   background-size:30px;
   width:30px;
   height:30px;
@@ -210,7 +269,7 @@ body {
     }
 }
 #insta {
-  background-image:url(../images/instagram-icon.svg);
+  background-image:url(../images/insta-white.svg);
   background-size:30px;
   width:30px;
   height:30px;
@@ -231,7 +290,7 @@ body {
     }
 }
 #twi {
-  background-image:url(../images/twitter-icon.svg);
+  background-image:url(../images/tw-white.svg);
   background-size:30px;
   width:30px;
   height:30px;
@@ -352,7 +411,7 @@ a.button {
   color:$secondary;
   letter-spacing:1px;
   display: block;
-  padding: 1em 3em;
+  padding: 1em 1em;
   width:179px;
   background:none;
   border: 3px solid $secondary;
@@ -373,3 +432,18 @@ a.button {
     transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
     }
   }
+
+// Open Table widget 
+.widget {
+  float: right;
+  position: absolute;
+  right: 15%;
+  top: 10%;
+  @media only screen and (max-width: 1200px) {
+    right: 5%;
+  }
+}
+
+
+
+

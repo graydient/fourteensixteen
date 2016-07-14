@@ -3,8 +3,22 @@ body {
   font-size: 14px;
   line-height: 1.42857143; }
 
+.logo {
+  margin-left: -1px;
+  margin-right: -1px;
+  background: url(../images/wood-texture-flowers.jpg);
+  background-size: cover;
+  height: 270px; }
+  @media only screen and (max-width: 47em) {
+    .logo {
+      background-position: 54%; } }
+
 .center {
   margin: 0 auto; }
+
+.well {
+  background-color: #FFFFFF;
+  padding: 0; }
 
 .headerhours {
   text-align: center;
@@ -17,6 +31,26 @@ body {
     line-height: 135%;
     text-transform: uppercase;
     color: #231f20; }
+
+.headernav p {
+  font-weight: 400;
+  color: #ffffff !important;
+  padding-top: 1em;
+  display: block;
+  max-width: 180px;
+  margin: 0 auto; }
+
+.headernav a {
+  color: #fafafa;
+  text-decoration: none; }
+
+.headernav a:hover, .headernav a:focus {
+  color: #B2ACAB;
+  text-decoration: none;
+  transition-property: color .5s linear 0s;
+  -moz-transition: color .5s linear 0s;
+  -webkit-transition: color .5s linear 0s;
+  -o-transition: color .5s linear 0s; }
 
 .typography span .line {
   width: 25%;
@@ -124,25 +158,38 @@ body {
   padding: 0 0 .8em 0;
   border-bottom: 1px dashed #ccc; }
 
+.info-copy {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%; }
+
 .menu {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em; }
-  .menu .button {
-    clear: both; }
 
 .social {
-  margin: 0 auto;
-  text-align: center;
-  width: 9em;
-  height: 3em; }
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-top: 6%;
+  background: url(../images/wood-texture-flowers.jpg);
+  background-size: cover;
+  height: 150px; }
+  .social .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .social p {
+    padding-top: 10px;
+    color: #ffffff; }
 
 .social div {
-  float: left;
+  text-align: center;
   margin: 0 auto; }
 
 #fb {
-  background-image: url(../images/facebook-icon.svg);
+  background-image: url(../images/fb-white.svg);
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -158,7 +205,7 @@ body {
     transition: background-image .5s ease-in-out; }
 
 #insta {
-  background-image: url(../images/instagram-icon.svg);
+  background-image: url(../images/insta-white.svg);
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -175,7 +222,7 @@ body {
     transition: background-image .5s ease-in-out; }
 
 #twi {
-  background-image: url(../images/twitter-icon.svg);
+  background-image: url(../images/tw-white.svg);
   background-size: 30px;
   width: 30px;
   height: 30px;
@@ -279,7 +326,7 @@ a.button {
   color: #987E5C;
   letter-spacing: 1px;
   display: block;
-  padding: 1em 3em;
+  padding: 1em 1em;
   width: 179px;
   background: none;
   border: 3px solid #987E5C;
@@ -295,3 +342,12 @@ a.button {
     -moz-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
     -o-transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out;
     transition: color .5s linear, background-color .5s ease-in-out, border-color .5s ease-in-out; }
+
+.widget {
+  float: right;
+  position: absolute;
+  right: 15%;
+  top: 10%; }
+  @media only screen and (max-width: 1200px) {
+    .widget {
+      right: 5%; } }
